@@ -1,0 +1,54 @@
+html, body{
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+}
+header {
+
+}
+nav {
+    background-color: grey;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 40PX;
+}
+main {
+    height: 100%;
+}
+.home-page {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 40PX;
+}
+.about-page {
+    background-color: lightgrey;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 40PX;
+}
+.work-page {
+    background-color: grey;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 40PX;
+}
+.contact-page {
+    background-color: lightgrey;
+    height: 120px;
+    width: 100%;
+    text-align: center;
+    font-size: 40PX;
+}
+.project-1 {
+    position: relative;
+    top: 100px;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: white;
+    width: 320px;
+    height: 320px;
+}
