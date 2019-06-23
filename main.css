@@ -1,21 +1,24 @@
 html, body{
+    background-color: rgb(240,242,245);
     box-sizing: border-box;
     height: 100%;
     margin: 0;
 }
 .wrapper {
     height: 100%;
+    margin: 0 20px;
 }
+
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: grey;
     width: 100%;
-    height: 8%;
+    height: 65px;
     text-align: center;
     top: 0;
+    border-bottom: 1px solid rgb(48,51,98);
 }
 .logo {
     text-decoration: none;
@@ -27,64 +30,38 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 0;
     margin: 0;
 }
 li {
-    display: none;
+    display: block;
     list-style-type: none;
-    margin: 0 20px;
+    margin: 0px 20px;
 }
 .navbar-toggle {
-    display: block;
+    border: none;
+    color: rgb(255,118,62);
+    background-color: rgb(240,242,245);
+    font-size: 25px;
+    cursor: pointer;
 }
 main {
-    height: 92%;
-    background-color: lightgrey;
+    height: calc(100% - 66px);
 }
 .main-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    padding: 40px 40px;
-}
-.home-page {
+    position: static;
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
-    text-align: center;
-    font-size: 40PX;
 }
-h1 {
-    margin: 0;
-}
-.about-page {
-    height: 95%;
-    background-color: lightgrey;
-    width: 100%;
-    text-align: center;
-    font-size: 40PX;
-}
-.work-page {
-    height: 95%;
-    background-color: grey;
-    width: 100%;
-    text-align: center;
-    font-size: 40PX;
-}
-.contact-page {
-    height: 95%;
-    background-color: lightgrey;
-    width: 100%;
-    text-align: center;
-    font-size: 40PX;
+h2 {
+    display: none;
 }
 .project-1 {
     position: relative;
@@ -95,20 +72,40 @@ h1 {
     width: 320px;
     height: 320px;
 }
+
+
 .hidden {
     display: none;
 }
+.navbar {
+    height: 100px;
+}
+.adjust-height {
+    height: calc(100% - 101px);
+}
+
+
+/* tablet size */
+
 @media only screen and (min-width: 600px) {
     .logo {
         display: none;
     }
-    li {
+    li.hidden {
         display: block;
     }
     .navbar-toggle {
         display: none;
     }
+    h2 {
+        display: block;
+        position: absolute;
+        margin: 0;
+    }
 }
+
+/* desktop size */
+
 @media only screen and (min-width: 900px) {
     header {
         height: 10%;
@@ -120,23 +117,30 @@ h1 {
         display: flex;
         flex-direction: row;
         height: 80%;
+        margin: 0;
+    }
+    section {
+        height: 80%;
+        margin: 0;
     }
     nav {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        border-right: 1px solid black;
-        width: 25%;
         display: flex;
+        justify-content: center;
+        border-right: 1px solid black;
+        border-bottom: none;
+        width: 25%;
         flex-direction: column;
         align-items: center;
         height: 100%;
     }
-
+    .navbar {
+        height: 100%;
+    }
     ul {
         display: flex;
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
+        justify-content: center;
         padding: 0;
     }
     li {
@@ -156,6 +160,16 @@ h1 {
         box-sizing: border-box;
         width: 100%;
         height: 100%;
-        padding: 40px 40px;
+        padding: 0px 40px;
+    }
+    h2 {
+        display: block;
+        position: absolute;
+        padding-left: 40px;
+        margin: 0;
+    }
+    .hidden {
+        display: none;
     }
 }
+

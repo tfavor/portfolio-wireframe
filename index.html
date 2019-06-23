@@ -14,37 +14,43 @@
     <header>
 
     </header>
-    <div class="wrapper">
-        <nav class="navbar">
+    <div class="wrapper"> 
+        <nav >
             <a class="logo" href="">tristan favor</a>
+            <span class="line-break"><br></span>  
             <ul>
-                <li>Tristan Favor</li>
-                <li>about</li>
-                <li>work</li>
-                <li>contact</li>
+                <li class="about hidden"><a href="">about</a></li>
+                <li class="work hidden"><a href="">work</a></li>
+                <li class="contact hidden"><a href="">contact</a></li>
             </ul>
             <button class="navbar-toggle" id="js-navbar-toggle">
                 <i class="fa fa-bars"></i>    
             </button>
         </nav>
         <main>
-            <div class="main-content">
-                <h1>content</h1>
+                <h2>tristan favor</h2>
+            <div class="main-content" id="about-page">
+                    <p class="headline">Hi, I'm Tristan. I am a front-end web developer from Austin Texas with a passion for creating beautiful and robust web applications.</p>
+                    <p class="skills">I build my applications with the following technologies... HTML CSS JavaScript</p>
             </div>
-            <!--<section class="about-page hidden" id="about">
-             SECTION 2
-            </section>
-            <section class="work-page hidden" id="work">
-                SECTION 3
-                <div class="project-1 hidden">project 1</div>
-            </section>
-            <section class="contact-page hidden" id="contact">
-                SECTION 4
-            </section>-->
+            <div class="main-content hidden" id="work-page">
+                <h1>work</h1>
+                    <p class="headline">Hi, I'm Tristan. I am a front-end web developer from Austin Texas with a passion for creating beautiful and robust web applications.</p>
+                    <p class="skills">I build my applications with the following technologies... HTML CSS JavaScript</p>
+            </div>
+            <div class="main-content hidden" id="contact-page">
+                <h1>contact</h1>
+                    <p class="headline">Hi, I'm Tristan. I am a front-end web developer from Austin Texas with a passion for creating beautiful and robust web applications.</p>
+                    <p class="skills">I build my applications with the following technologies... HTML CSS JavaScript</p>
+            </div>
         </main>
     </div>
     <footer>
 
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
