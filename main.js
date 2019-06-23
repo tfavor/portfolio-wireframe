@@ -30,11 +30,3 @@ $(function handleLinks() {
     });
 })
 
-function viewPort () {
-    if (window.matchMedia('(min-width: 600px)').matches) {
-        console.log('tablet');
-    } else {
-        console.log('phone');
-    }
-}
-viewPort();
