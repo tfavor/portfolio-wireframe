@@ -3,42 +3,85 @@ html, body{
     height: 100%;
     margin: 0;
 }
-header {
-
+.wrapper {
+    height: 100%;
 }
 nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     background-color: grey;
     width: 100%;
-    height: 50px;
+    height: 8%;
     text-align: center;
-    font-size: 40PX;
+    top: 0;
+}
+.logo {
+    text-decoration: none;
+    color: black;
+    font-size: 20px
+}
+ul {
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+}
+li {
+    display: none;
+    list-style-type: none;
+    margin: 0 20px;
+}
+.navbar-toggle {
+    display: block;
 }
 main {
+    height: 92%;
+    background-color: lightgrey;
+}
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
     height: 100%;
+    padding: 40px 40px;
 }
 .home-page {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     width: 100%;
+    height: 100%;
     text-align: center;
     font-size: 40PX;
 }
+h1 {
+    margin: 0;
+}
 .about-page {
+    height: 95%;
     background-color: lightgrey;
-    height: 100%;
     width: 100%;
     text-align: center;
     font-size: 40PX;
 }
 .work-page {
+    height: 95%;
     background-color: grey;
-    height: 100%;
     width: 100%;
     text-align: center;
     font-size: 40PX;
 }
 .contact-page {
+    height: 95%;
     background-color: lightgrey;
-    height: 120px;
     width: 100%;
     text-align: center;
     font-size: 40PX;
@@ -51,4 +94,68 @@ main {
     background-color: white;
     width: 320px;
     height: 320px;
+}
+.hidden {
+    display: none;
+}
+@media only screen and (min-width: 600px) {
+    .logo {
+        display: none;
+    }
+    li {
+        display: block;
+    }
+    .navbar-toggle {
+        display: none;
+    }
+}
+@media only screen and (min-width: 900px) {
+    header {
+        height: 10%;
+    }
+    footer {
+        height: 10%;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        height: 80%;
+    }
+    nav {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-right: 1px solid black;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0;
+    }
+    li {
+        margin: 1em 0;
+    }
+    .navbar-toggle {
+        display: none;
+    }
+    main {
+        width: 75%;
+        height: 100%;
+    }
+    .main-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        padding: 40px 40px;
+    }
 }
