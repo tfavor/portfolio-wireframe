@@ -9,6 +9,8 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9b8408dd18.js"></script>
 </head>
 <body>
     <header>
@@ -19,26 +21,30 @@
             <a class="logo" href="">tristan favor</a>
             <span class="line-break"><br></span>  
             <ul>
+                <li class="tristan hidden"><a href="">Tristan Favor</a></li>
                 <li class="about hidden"><a href="">about</a></li>
                 <li class="work hidden"><a href="">work</a></li>
-                <li class="contact hidden"><a href="">contact</a></li>
             </ul>
             <button class="navbar-toggle" id="js-navbar-toggle">
                 <i class="fa fa-bars"></i>    
             </button>
         </nav>
         <main>
-                <h2>tristan favor</h2>
-            <div class="main-content" id="about-page">
+            <div class="name">tristan favor</div>
+            <div class="main-content" id="head-page">
                     <p class="headline">Hi, I'm Tristan. I am a front-end web developer from Austin Texas with a passion for creating beautiful and robust web applications.</p>
-                    <p class="skills">I build my applications with the following technologies... HTML CSS JavaScript</p>
+                    <p class="skills">skills include: <span>
+                     <i class="fab fa-html5"> HTML</i> <i class="fab fa-css3"> CSS</i> <i class="fab fa-js-square"> JavaScript</i>
+                    </span>
+                    </p>
+            </div>
+            <div class="main-content hidden" id="about-page">
+                    <p class="about-paragraph">I am currently enrolled in Thinkfull's full stack development Bootcamp. Programing developed into a passion of mine after learning all of the amazing ways I could express my creativity through design and problem-solving. I am most fond of JavaScript because of all the powerful built-in features it offers, as well as its flexibility for both front-end development and back-end.</p>
+                    <p class="about-paragraph">Outside of coding, my affections lie in the outdoors. Hiking, mountain biking, and snowboarding are just a few examples of activities you can find my indulging in throughout the year.</p>
+                    <h3>Get in touch </h3>
+                    <span class="contact-me"><i class="fab fa-github"></i> <i class="fab fa-linkedin"></i></span>
             </div>
             <div class="main-content hidden" id="work-page">
-                <h1>work</h1>
-                    <p class="headline">Hi, I'm Tristan. I am a front-end web developer from Austin Texas with a passion for creating beautiful and robust web applications.</p>
-                    <p class="skills">I build my applications with the following technologies... HTML CSS JavaScript</p>
-            </div>
-            <div class="main-content hidden" id="contact-page">
                 <h1>contact</h1>
                     <p class="headline">Hi, I'm Tristan. I am a front-end web developer from Austin Texas with a passion for creating beautiful and robust web applications.</p>
                     <p class="skills">I build my applications with the following technologies... HTML CSS JavaScript</p>
@@ -46,7 +52,6 @@
         </main>
     </div>
     <footer>
-
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

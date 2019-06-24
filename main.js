@@ -10,22 +10,25 @@ $(function navbarToggle() {
 
 
 $(function handleLinks() {
+    $(".tristan").on('click', function(event) {
+        $("#head-page").removeClass('hidden');
+        $("#about-page").addClass('hidden');
+        $("#work-page").addClass('hidden');
+        $(".name").html('Tristan Favor');
+        event.preventDefault();
+    });
     $(".about").on('click', function(event) {
+        $("#head-page").addClass('hidden');
         $("#about-page").removeClass('hidden');
         $("#work-page").addClass('hidden');
-        $("#contact-page").addClass('hidden');
+        $(".name").html('About');
         event.preventDefault();
     });
     $(".work").on('click', function(event) {
+        $("#head-page").addClass('hidden');
         $("#about-page").addClass('hidden');
         $("#work-page").removeClass('hidden');
-        $("#contact-page").addClass('hidden');
-        event.preventDefault();
-    });
-    $(".contact").on('click', function(event) {
-        $("#about-page").addClass('hidden');
-        $("#work-page").addClass('hidden');
-        $("#contact-page").removeClass('hidden');
+        $(".name").html('Work');
         event.preventDefault();
     });
 })

@@ -1,3 +1,8 @@
+@font-face {
+    font-family:Adequate;
+    src: url(Adequate-ExtraLight.ttf);
+  }
+
 html, body{
     background-color: rgb(240,242,245);
     box-sizing: border-box;
@@ -10,6 +15,7 @@ html, body{
 }
 
 nav {
+    background-color: rgb(38,47,53);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -21,8 +27,9 @@ nav {
     border-bottom: 1px solid rgb(48,51,98);
 }
 .logo {
+    font-family:Adequate;
+    font-weight: bold;
     text-decoration: none;
-    color: black;
     font-size: 20px
 }
 ul {
@@ -33,21 +40,27 @@ ul {
     justify-content: center;
     padding: 0;
     margin: 0;
+    
 }
 li {
+    list-style-type: none;
     display: block;
     list-style-type: none;
     margin: 0px 20px;
 }
+a {
+    text-decoration: none;
+    color: rgb(255,209,6);
+}
 .navbar-toggle {
     border: none;
-    color: rgb(255,118,62);
-    background-color: rgb(240,242,245);
+    color: rgb(255,209,6);
+    background-color: rgb(38,47,53);
     font-size: 25px;
     cursor: pointer;
 }
 main {
-    height: calc(100% - 66px);
+    height: calc(100% - 96px);
 }
 .main-content {
     position: static;
@@ -59,8 +72,9 @@ main {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
+    margin-bottom: 20px; 
 }
-h2 {
+.name {
     display: none;
 }
 .project-1 {
@@ -72,7 +86,30 @@ h2 {
     width: 320px;
     height: 320px;
 }
-
+p {
+    font-family: 'Quattrocento', serif;
+    font-size: 20px;
+    margin: 30px 0;
+}
+i {
+    font-size: 20px;
+    margin: 0 9px;
+}
+span {
+    display: block;
+    margin-top: 20px;
+}
+.about-paragraph {
+    margin: 10px 0;
+}
+h3 {
+    font-family: 'Quattrocento', serif;
+    font-weight: lighter;
+    font-size: 30px;
+}
+.contact-me > i {
+    font-size: 40px;
+}
 
 .hidden {
     display: none;
@@ -89,24 +126,39 @@ h2 {
 
 @media only screen and (min-width: 600px) {
     .logo {
-        display: none;
+        display: block;
+    }
+   .name {
+       display: none;
+   }
+    .navbar {
+        height: 65px;
     }
     li.hidden {
         display: block;
     }
+    .tristan {
+        display: none;
+    }
     .navbar-toggle {
         display: none;
     }
-    h2 {
-        display: block;
-        position: absolute;
-        margin: 0;
+   
+    .main-content {
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        margin-top: 10px;
+        height: calc(100% - 40px);
+        padding: 10px 20px;
     }
 }
 
 /* desktop size */
 
 @media only screen and (min-width: 900px) {
+    .logo {
+        display: none;
+    }
     header {
         height: 10%;
     }
@@ -146,6 +198,9 @@ h2 {
     li {
         margin: 1em 0;
     }
+    .tristan {
+        display: block;
+    }
     .navbar-toggle {
         display: none;
     }
@@ -156,20 +211,28 @@ h2 {
     .main-content {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         box-sizing: border-box;
-        width: 100%;
+        width: calc(100% - 40px);
         height: 100%;
-        padding: 0px 40px;
+        padding: 0 40px;
+        border-left: 1px solid black;
+        border-top: 1px solid black;
+        margin-left: 20px; 
+        margin-right: 20px;
     }
-    h2 {
+    .name {
+        font-family:Adequate;
+        font-weight: bold;
         display: block;
-        position: absolute;
-        padding-left: 40px;
-        margin: 0;
+        padding-left: 20px;
+        font-size: 30px;
     }
     .hidden {
         display: none;
+    }
+    .adjust-height {
+        height: 100%;
     }
 }
 
