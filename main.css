@@ -63,7 +63,7 @@ main {
     height: calc(100% - 96px);
 }
 .main-content {
-    position: static;
+
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -73,6 +73,7 @@ main {
     width: 100%;
     height: 100%;
     margin-bottom: 20px; 
+    overflow: hidden;
 }
 .name {
     display: none;
@@ -111,6 +112,8 @@ h3 {
     font-size: 40px;
 }
 
+
+
 .hidden {
     display: none;
 }
@@ -118,7 +121,7 @@ h3 {
     height: 100px;
 }
 .adjust-height {
-    height: calc(100% - 101px);
+    height: calc(100% - 121px);
 }
 
 
@@ -128,16 +131,16 @@ h3 {
     .logo {
         display: block;
     }
-   .name {
-       display: none;
-   }
+    .name {
+     display: none;
+    }
     .navbar {
         height: 65px;
     }
     li.hidden {
         display: block;
     }
-    .tristan {
+    .tristan>a {
         display: none;
     }
     .navbar-toggle {
@@ -198,7 +201,7 @@ h3 {
     li {
         margin: 1em 0;
     }
-    .tristan {
+    .tristan>a{
         display: block;
     }
     .navbar-toggle {
