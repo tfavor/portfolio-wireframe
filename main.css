@@ -93,13 +93,17 @@ i {
     font-size: 20px;
     margin: 0 9px;
 }
-#head-page>.skills>span {
-    color: rgb(255,209,6);
-    font-size: 23px;
-    font-weight: bolder;
+.technologies>i {
+    display: block;
 }
 #head-page>.skills>span>.fab {
     color: rgb(38,47,53);
+}
+.html, .css, .js {
+    display: inline;
+    color: rgb(255,209,6);
+    font-size: 23px;
+    font-weight: bolder;
 }
 span {
     display: block;
@@ -210,6 +214,9 @@ img {
     }
     p {
         font-size: 20px;
+    }
+    .technologies>i {
+        display: inline;
     }
 }
 
