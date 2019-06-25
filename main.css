@@ -26,6 +26,7 @@ nav {
     top: 0;
     border-bottom: 1px solid rgb(48,51,98);
 }
+
 .logo {
     font-family:Adequate;
     font-weight: bold;
@@ -43,6 +44,7 @@ ul {
     
 }
 li {
+    font-size: 18px;
     list-style-type: none;
     display: block;
     list-style-type: none;
@@ -52,17 +54,11 @@ a {
     text-decoration: none;
     color: rgb(255,209,6);
 }
-.navbar-toggle {
-    border: none;
-    color: rgb(255,209,6);
-    background-color: rgb(38,47,53);
-    font-size: 25px;
-    cursor: pointer;
-}
 main {
     height: calc(100% - 96px);
 }
 .main-content {
+    color: rgb(38,47,53);
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -73,20 +69,37 @@ main {
     height: calc(100% - 10px);
     margin-bottom: 20px; 
     margin-top: 10px;
+    padding: 10px 20px;
+    border-top: 1px solid rgb(38,47,53);;
+    border-left: 1px solid rgb(38,47,53);;
     overflow: auto;
 }
 .name {
+    color: rgb(38,47,53);
     display: none;
 }
-
+h1 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: lighter;
+}
 p {
     font-family: 'Quattrocento', serif;
     font-size: 16px;
     margin: 30px 0;
 }
 i {
+    color: rgb(38,47,53);
     font-size: 20px;
     margin: 0 9px;
+}
+#head-page>.skills>span {
+    color: rgb(255,209,6);
+    font-size: 23px;
+    font-weight: bolder;
+}
+#head-page>.skills>span>.fab {
+    color: rgb(38,47,53);
 }
 span {
     display: block;
@@ -99,9 +112,21 @@ h3 {
     font-family: 'Quattrocento', serif;
     font-weight: lighter;
     font-size: 30px;
+    margin-bottom: 0;
 }
-.contact-me > i {
-    font-size: 40px;
+.fa-linkedin {
+    border-radius: 10%;
+}
+.fa-github {
+    border-radius: 100%;
+}
+.contact-me>a>i {
+    color: (38,47,53);
+    font-size: 30px;
+}
+.contact-me>a>i:hover{
+    color: rgb(255,209,6);
+    background-color: rgb(38,47,53);
 }
 .project-1 {
     box-sizing: border-box;
@@ -112,25 +137,34 @@ h3 {
 img {
     box-sizing: border-box;
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid rgb(38,47,53);
     border-bottom: none;
 }
 .project-description {
     padding-left: 10px;
     padding-bottom: 20px;
     box-sizing: border-box;
-    border: 1px solid black;
+    border: 1px solid rgb(38,47,53);
     width: 100%;
 }
-.project-description>a>button {
+.project-description>a>button:hover {
     color: rgb(240,242,245);
-    background-color: rgb(48,51,98);
+}
+.project-description>a>button {
+    color: rgb(255,209,6);
+    background-color: rgb(38,47,53);
     font-family: 'Quattrocento', serif;
     text-decoration: none;
     font-size: 20px;
-    border-radius: 2%;
+    border-radius: 3%;
     border: none;
+    padding: 12px;
 }
+.project-description>h2 {
+    font-family: Adequate;
+    font-weight: bolder;
+}
+
 
 
 
@@ -168,8 +202,8 @@ img {
     }
    
     .main-content {
-        border-top: 1px solid black;
-        border-left: 1px solid black;
+        border-top: 1px solid rgb(38,47,53);;
+        border-left: 1px solid rgb(38,47,53);;
         margin-top: 10px;
         height: calc(100% - 40px);
         padding: 10px 20px;
@@ -183,7 +217,7 @@ img {
 
 @media only screen and (min-width: 900px) {
     .logo {
-        display: none;
+        display: block;
     }
     header {
         height: 10%;
@@ -204,7 +238,7 @@ img {
     nav {
         display: flex;
         justify-content: center;
-        border-right: 1px solid black;
+        border-right: 1px solid rgb(38,47,53);;
         border-bottom: none;
         width: 25%;
         flex-direction: column;
@@ -222,6 +256,7 @@ img {
         padding: 0;
     }
     li {
+        font-size: 20px;
         margin: 1em 0;
     }
     .tristan>a{
@@ -242,8 +277,8 @@ img {
         width: calc(100% - 40px);
         height: 100%;
         padding: 0 40px;
-        border-left: 1px solid black;
-        border-top: 1px solid black;
+        border-left: 1px solid rgb(38,47,53);;
+        border-top: 1px solid rgb(38,47,53);;
         margin-left: 20px; 
         margin-right: 20px;
     }
