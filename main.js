@@ -12,7 +12,7 @@ function getAboutPage() {
     $(".main-content").html(` <p class="about-paragraph">I am currently enrolled in Thinkfull's full stack development Bootcamp. Programing developed into a passion of mine after learning all of the amazing ways I could express my creativity through design and problem-solving. I am most fond of JavaScript because of all the powerful built-in features it offers, as well as its flexibility for both front-end development and back-end.</p>
     <p class="about-paragraph">Outside of coding, my interests lie in the outdoors. Hiking, mountain biking, and snowboarding are just a few examples of activities you can find my indulging in throughout the year.</p>
     <h3>Get in touch </h3>
-    <span class="contact-me"><a href="https://github.com/tfavor"><i class="fab fa-github"></i></a> <a href=""><i class="fab fa-linkedin"></i></a></span>`);
+    <span class="contact-me"><a href="https://github.com/tfavor"><i class="fab fa-github"></i></a> <a href="https://www.linkedin.com/in/tristan-favor-605601163"><i class="fab fa-linkedin"></i></a> <a href="mailto:tristanfavor29@gmail.com"><i class="fas fa-envelope"></i></a></span>`);
 }
 
 function getWorkPage() {
@@ -22,10 +22,10 @@ function getWorkPage() {
     <div class="project-description">
         <h2>Wildlife Quiz App</h2>
         <p>A short, fun, and educating quiz game with questions about nature and wildlife.</p>
-        <a class="view-code" href="">
+        <a class="view-code" href="https://github.com/tfavor/quiz-app.git">
             <button>View Code</button>
         </a>
-        <a class="view-site" href="">
+        <a class="view-site" href=" https://tfavor.github.io/quiz-app/">
             <button>View site</button>
         </a>
     </div>

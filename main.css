@@ -120,6 +120,9 @@ h3 {
 .fa-github {
     border-radius: 100%;
 }
+.fa-envelope {
+    border-radius: 10%;
+}
 .contact-me>a>i {
     color: (38,47,53);
     font-size: 30px;
@@ -163,7 +166,12 @@ img {
 .project-description>h2 {
     font-family: 'Simonetta', cursive;
 }
-
+.email-address {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    font-size: 11px;
+}
 
 
 
