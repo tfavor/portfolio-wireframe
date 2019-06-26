@@ -172,7 +172,17 @@ img {
     right: 20px;
     font-size: 11px;
 }
-
+a,button:focus {
+    outline-color: gold;
+}
+.new-window {
+    display: block;
+    font-size: 12px;
+}
+.popup {
+    margin: 0;
+    font-size: 10px;
+}
 
 
 .hidden {
@@ -211,7 +221,7 @@ img {
     .main-content {
         border-top: 1px solid rgb(38,47,53);;
         border-left: 1px solid rgb(38,47,53);;
-        margin-top: 10px;
+        margin-top: 0px;
         height: calc(100% - 40px);
         padding: 10px 20px;
     }
@@ -219,6 +229,9 @@ img {
         font-size: 20px;
     }
     .technologies>i {
+        display: inline;
+    }
+    .new-window {
         display: inline;
     }
 }
